@@ -8,6 +8,11 @@ import {
 import {
     getAuth
 } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+import {
+    GoogleAuthProvider
+} from "firebase/auth";
+
+
 
 var privatePages = [
     '/dashboard'
@@ -65,7 +70,7 @@ const signout = () => {
     auth.signOut();
 }
 
-var provider = new firebase.auth.GoogleAuthProvider();
+const provider = new GoogleAuthProvider();
 const signup = () => {
     firebase.auth().signInWithPopup(provider);
     firebase.auth()
