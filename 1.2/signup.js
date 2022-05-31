@@ -11,6 +11,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
 
 
+const signInButton = document.querySelector('#signInButton');
+const signOutButton = document.querySelector('#menuSignOutButton');
+const userName = document.querySelector('#userName');
+const userProfilePic = document.querySelector('#userProfilePic');
+const loader = document.querySelector('#loader');
+
 
 var privatePages = [
     '/dashboard'
