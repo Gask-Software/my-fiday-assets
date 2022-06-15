@@ -76,8 +76,8 @@ const signout = () => {
 
 const provider = new GoogleAuthProvider();
 const signup = () => {
-    firebase.auth().signInWithPopup(provider);
-    firebase.auth()
+    auth.signInWithPopup(provider);
+    auth
         .getRedirectResult()
         .then((result) => {
             if (result.credential) {
